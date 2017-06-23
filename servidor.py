@@ -18,13 +18,13 @@ def main():
     for linha in comandos:
         comando = linha.split(' ')
         mensagem_retorno = ''
-        if (comando[0] == 'soma' and len(comando) == 3):
+        if (comando[0] == 'soma' and len(comando) == 3): 
             mensagem_retorno += somar(int(comando[1]), int(comando[2]))
-		elif (comando[0] == 'subtrair' and len(comando) == 3):
+        elif (comando[0] == 'subtrair' and len(comando) == 3):
             mensagem_retorno += subtrair(int(comando[1]), int(comando[2]))
-		elif (comando[0] == 'multiplicar' and len(comando) == 3):
+        elif (comando[0] == 'multiplicar' and len(comando) == 3):
             mensagem_retorno += multiplicar(int(comando[1]), int(comando[2]))
-		elif (comando[0] == 'dividir' and len(comando) == 3):
+        elif (comando[0] == 'dividir' and len(comando) == 3):
             mensagem_retorno += dividir(int(comando[1]), int(comando[2]))
         elif (comando[0] == 'raiz_quadrada' and len(comando) == 2):
             mensagem_retorno += raiz_quadrada(int(comando[1]))
